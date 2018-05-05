@@ -13,7 +13,13 @@ import MyAnimeList from './components/example_list/MyAnimeList';
 import ExampleFetchAPI from './components/example_fetch_api/Main'
 import ExampleFetchAPICreate from './components/example_fetch_api/Create'
 import ExampleFetchAPIUpdate from './components/example_fetch_api/Update'
-
+import ExampleAsyncStorage from './components/example_asyncStorage/Main'
+// import NotificationsList from './components/example_praujian/NotificationList';
+// import NotificationsDetail from './components/example_praujian/screens/NotificationDetail';
+// import Notifications from './components/example_praujian/components/Notifications';
+// import NotificationsItems from './components/example_praujian/screens/NotificationItem';
+import ProfileList from './components/example_ujian/ProfileList';
+import UpdateProfile from './components/example_ujian/UpdateProfile';
 
 const App = StackNavigator({
     RouteMain: {
@@ -90,6 +96,55 @@ const App = StackNavigator({
         screen: ExampleFetchAPIUpdate,
         navigationOptions:{
             title: "Example Update"
+        }
+    },
+
+    RouteAsyncStorage:{
+        screen: ExampleAsyncStorage,
+        navigationOptions:{
+            title: "Example AsyncStorage"
+        }
+    },
+
+    // NotificationsList:{
+    //     screen: NotificationsList,
+    //     navigationOptions:{
+    //         title: "Notification List"
+    //     }
+    // },
+    
+    // NotificationsDetail: {
+    //     screen: NotificationsDetail,
+    //     navigationOptions:{
+    //         title: "Notifications Deatail"
+    //     }
+    // },
+
+    // Notifications: {
+    //     screen: Notifications,
+    //     navigationOptions:{
+    //         title: "Notifications Deatail"
+    //     }
+    // },
+
+    // NotificationsItems: {
+    //     screen: NotificationsItems,
+    //     navigationOptions:{
+    //         title: "Notifications Items"
+    //     }
+    // },
+
+    ProfileList: {
+        screen: ProfileList,
+        navigationOptions:{
+            title: "Profile List"
+        }
+    },
+
+    UpdateProfile: {
+        screen: UpdateProfile,
+        navigationOptions:{
+            title: "Update Profile"
         }
     },
 },

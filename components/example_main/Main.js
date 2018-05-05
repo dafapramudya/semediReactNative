@@ -25,6 +25,15 @@ export default class Main extends Component{
                         <ListItem onPress={()=> this.props.navigation.navigate('RouteList')}>
                             <Text>Go To WibuClub</Text>
                         </ListItem>
+                        <ListItem onPress={()=> this.props.navigation.navigate('RouteAsyncStorage')}>
+                            <Text>Example AsyncStorage</Text>
+                        </ListItem>
+                        <ListItem onPress={()=> this.props.navigation.navigate('RouteFilterPicker')}>
+                            <Text>Example Picker Filter</Text>
+                        </ListItem>
+                        <ListItem onPress={()=> this.props.navigation.navigate('ProfileList')}>
+                            <Text>Example Ujian</Text>
+                        </ListItem>
                     </List>
                 </Content>
             </Container>
